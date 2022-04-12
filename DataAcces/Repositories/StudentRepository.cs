@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Repositories
+namespace DataAccess.Repositories
 {
     public class StudentRepository : IRepository<Student>
     {
@@ -17,7 +17,7 @@ namespace Business.Repositories
             {
                 DataContext.Students.Add(entity);
                 return true;
-            }
+            }   
             catch (Exception)
             {
 
